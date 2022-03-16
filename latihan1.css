@@ -1,0 +1,101 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 25px;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+
+body{
+    font-family: var(--sans);
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-image: url(flexboxbg.png);
+    background-size: cover;
+    margin-top: 20px;
+   
+   
+}
+.container-satu{
+    margin: auto;
+    border: 2px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: var(--dkblue);
+    color: azure;
+    padding-bottom: 30px;
+    
+}
+.kolom-utama{
+flex: 5;
+margin-left: 40px;
+
+
+}
+.kolom-utama .name{
+    line-height:1,5;
+    font-family: var(--mono);
+}
+.kolom-utama .name span{
+    display: block;
+    font-size: 25px;
+    font-family: var(--sans);
+}
+.side-bar-satu{
+flex: 1;
+}
+
+.side-bar-dua{
+flex: 1;
+
+}
+.side-bar-satu a{
+    text-decoration: none;
+    color: var(--magenta);
+}
+.side-bar-satu a :hover{
+
+    color: var(--hotmag);
+}
+.container-dua{
+    margin: 50px auto;
+    justify-content: space-between;
+    
+
+}
+.layanan{
+   
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+.layanan.satu{
+    background-color: #bdc023;
+}
+.layanan.dua{
+    background-color: var(--magenta);
+}
+.layanan.tiga{
+background-color: #86fbfb;
+}
+@media( min-width:600px){
+    .container-satu{
+        display: flex;
+        width: 800px;
+    }
+    .container-dua{
+        width: 800px;
+        display: flex;
+    }
+    .layanan{
+        width: 30%;
+    }
+}
