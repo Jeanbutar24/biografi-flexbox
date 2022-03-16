@@ -67,7 +67,7 @@ flex: 1;
 .container-dua{
     margin: 50px auto;
     justify-content: space-between;
-    
+    display: flex;
 
 }
 .layanan{
@@ -80,11 +80,33 @@ flex: 1;
 .layanan.satu{
     background-color: #bdc023;
 }
+
 .layanan.dua{
     background-color: var(--magenta);
 }
+
 .layanan.tiga{
 background-color: #86fbfb;
+}
+
+.container-tiga{
+    width: 800px;
+    box-sizing: border-box;
+    border: 2px solid;
+    margin: auto;
+    
+}
+.thumbnail{
+    display: flex;
+    width: 25%;
+   
+}
+.thumbnail img{
+   width: 100%;
+  
+}
+.container-tiga .thumbnail img{
+    width: 100%;
 }
 @media( min-width:600px){
     .container-satu{
